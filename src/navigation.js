@@ -31,6 +31,7 @@ const tabs = [{
 
     return (
       <div>
+        {/*Top Nav Bar*/}
         <nav className="navbar navbar-expand-md navbar-light d-none d-lg-block sticky-top" role="navigation">
           <div className="container-fluid">
               <a className="navbar-brand" href="/home">e-MEKs</a>
@@ -48,6 +49,7 @@ const tabs = [{
               </Nav>
           </div>
         </nav>
+        {/*Bottom Nav Bar*/}
         <nav className="navbar fixed-bottom navbar-light d-block d-lg-none bottom-tab-nav" role="navigation">
         <Nav className="w-100">
           <div className=" d-flex flex-row justify-content-around w-100">
