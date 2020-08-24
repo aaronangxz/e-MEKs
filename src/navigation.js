@@ -37,13 +37,28 @@ const tabs = [{
               <a className="navbar-brand" href="/home">e-MEKs</a>
               <Nav className="ml-auto">
                 <NavItem>
-                  <NavLink to="/search" className="nav-link">
-                    Search
+                  <NavLink to="/home" className="nav-link">
+                    Home
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/resources" className="nav-link">
+                    Resources
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/vault" className="nav-link">
+                    the Vault
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink to="/parts" className="nav-link">
+                    Parts
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink to="/login" className="nav-link">
-                    Login
+                    Me
                   </NavLink>
                 </NavItem>
               </Nav>
