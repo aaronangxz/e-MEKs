@@ -13,6 +13,8 @@ import datasheets_ico from './Resources/datasheets_ico.png'
 import dws_ico from './Resources/dws_ico.png'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { CardGroup } from 'reactstrap';
+import CardDeck from 'react-bootstrap/CardDeck'
 
 const Wrapper = styled.div`
   display: flex;
@@ -63,18 +65,21 @@ const ExampleStyledComponents = () => (
   <SafeArea top bottom>
   <Wrapper>
     <Title>Resources</Title>
-    <Card className="text-center" style={{ display:'inline', justifyContent:'top' , width: 'devicewidth'}}>
-  <Card.Body style={{height: '80px',padding: '0px'}} >
+    <CardDeck>
+    <Card className="text-center" style={{ display:'inline', justifyContent:'top' , width: '50px'}}>
+  <Card.Body style={{height: '80px',width: '150px',align: 'centre'}} >
     <Card.Img variant = "top" style={{width: '6vh'}} src={notes_ico}/>
-    <Card.Title>Technical Notes</Card.Title>
+    <Card.Title>Notes</Card.Title>
   </Card.Body>
 </Card>
-<Card className="text-center" style={{ display:'inline', justifyContent:'top' , width: 'devicewidth'}}>
+<Card className="text-center" style={{ display:'inline', justifyContent:'top' , width: '5vh'}}>
   <Card.Body style={{height: '80px',padding: '0px'}} >
     <Card.Img variant = "top" style={{width: '6vh'}} src={datasheets_ico}/>
-    <Card.Title>Data Sheets</Card.Title>
+    <Card.Title>Sheets</Card.Title>
   </Card.Body>
 </Card>
+</CardDeck>
+
 <Card className="text-center" style={{ display:'inline', justifyContent:'top' , width: 'devicewidth'}}>
   <Card.Body style={{height: '80px',padding: '0px'}} >
     <Card.Img variant = "top" style={{width: '6vh'}} src={assaysheets_ico}/>
@@ -93,6 +98,7 @@ const ExampleStyledComponents = () => (
     <Card.Title>Signals</Card.Title>
   </Card.Body>
 </Card>
+
 
 
   </Wrapper>

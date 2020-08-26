@@ -14,12 +14,12 @@ function App() {
       <BrowserRouter>
       <Navigation />
         <Switch>
-          <NavLink to path="/" component={Home} exact={true} activeClassName="active"/>
-          <Route path="/home" component={Home} exact={true}/>
-          <Route path="/vault" component={Vault} />
-          <Route path="/login" component={Login} />
-          <Route path="/parts" component={Parts} />
-          <Route path="/resources" component={Resources} />
+          <NavLink to path="/" exact component={Home} activeClassName="active"/>
+          <Route path="/home" exact component={Home}/>
+          <Route path="/vault" exact component={Vault} />
+          <Route path="/login" exact component={Login} />
+          <Route path="/parts" exact component={Parts} />
+          <Route path="/resources" exact component={Resources} />
         </Switch>
       </BrowserRouter>
     </div>
