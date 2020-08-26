@@ -15,6 +15,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { CardGroup } from 'reactstrap';
 import CardDeck from 'react-bootstrap/CardDeck'
+import {Container, Row , Col} from 'react-bootstrap'
 
 const Wrapper = styled.div`
   display: flex;
@@ -63,8 +64,73 @@ const Resources = (props) => {
 
 const ExampleStyledComponents = () => (
   <SafeArea top bottom>
+     <Wrapper>
+<Title>Resources</Title>
+  <main class ="flex-menu">
+
+    <div id="wrapper">
+    <img class = "flex-menuitem" src = {notes_ico} alt="ddd"></img>  
+    <p class="flex-text">Technical Notes</p>
+    </div>
+
+    <div id="wrapper">
+    <img class = "flex-menuitem" src = {datasheets_ico} alt="ddd"></img>  
+    <p class="flex-text">Data Sheets</p>
+    </div>
+
+    <div id="wrapper">
+    <img class = "flex-menuitem" src = {assaysheets_ico} alt="ddd"></img>  
+    <p class="flex-text">Assay Sheets</p>
+    </div>
+
+    <div id="wrapper">
+    <img class = "flex-menuitem" src = {journals_ico} alt="ddd"></img>  
+    <p class="flex-text">Journals</p>
+    </div>
+
+    <div id="wrapper">
+    <img class = "flex-menuitem" src = {signals_ico} alt="ddd"></img>  
+    <p class="flex-text">Signals</p>
+    </div>
+
+    <div id="wrapper">
+    <img class = "flex-menuitem" src = {dws_ico} alt="ddd"></img>  
+    <p class="flex-text">DWS</p>
+    </div>
+  </main>
+
+{/* 
+  <ul class="flex-container">
+    <li class="flex-item"> 1 </li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+  </ul>
+
+
+  <Container>
+  <Row className="justify-content-sm-center">
+    <Col xs ='auto' >sm=2</Col>
+    <Col xs ='auto' >sm=2</Col>
+    <Col xs ='auto' >sm=2</Col>
+   
+  </Row>
+  <Row className="justify-content-sm-center">
+    <Col sm>sm=true</Col>
+    <Col sm>sm=true</Col>
+    <Col sm>sm=true</Col>
+  </Row>
+</Container>
+  
+  
   <Wrapper>
     <Title>Resources</Title>
+
+ 
+
+
     <CardDeck>
     <Card className="text-center" style={{ display:'inline', justifyContent:'top' , width: '50px'}}>
   <Card.Body style={{height: '80px',width: '150px',align: 'centre'}} >
@@ -102,6 +168,9 @@ const ExampleStyledComponents = () => (
 
 
   </Wrapper>
+*/}
+
+</Wrapper>
   </SafeArea>
 );
 //export default ExampleStyledComponents;

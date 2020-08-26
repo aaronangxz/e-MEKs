@@ -64,8 +64,6 @@ height: 40px;
 align-items: center;
 `;
 
-
-
 const ExampleStyledComponents = () => (
   <SafeArea top bottom>
   <Wrapper>
