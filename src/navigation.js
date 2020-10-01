@@ -6,7 +6,7 @@ import { faHome, faUserCircle, faFolder, faTools, faDiceD20 } from '@fortawesome
 
 
 const tabs = [{
-    route: "/home",
+    route: "/",
     icon: faHome,
     label: "Home"
   },{
@@ -71,7 +71,7 @@ const tabs = [{
             {
               tabs.map((tab, index) =>(
                 <NavItem key={`tab-${index}`}>
-                  <NavLink to={tab.route} className="nav-link bottom-nav-link" activeClassName="active">
+                  <NavLink to={tab.route} className="nav-link bottom-nav-link" activeClassName="active" exact={true}>
                     <div className="row d-flex flex-column justify-content-center align-items-center">
                       <FontAwesomeIcon size="lg" icon={tab.icon}/>
                       <div className="bottom-tab-label">{tab.label}</div>
